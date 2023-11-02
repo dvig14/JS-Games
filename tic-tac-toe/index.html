@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+     
+   <div class="back-wrapper"></div>
+
+    <section class="wrapper">
+        <div class="icons">
+            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-o"></i>
+        </div>
+
+        <div class="container">
+          <div class="choose-icon">
+            <p>pick player 1's mark</p>
+            <div class="icon-btns">
+              <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-o active"></i>
+            </div>
+            <p>remember : x goes first</p>
+          </div>
+          <div class="othPlayer">
+            <p>player 2</p>
+            <input type="text" placeholder="Enter Your Name">
+            <button id="submit-btn">submit</button>
+          </div>
+        </div>
+       
+        <div class="btns">
+          <button>new game (vs cpu)</button>
+          <button>new game (vs player)</button>
+        </div>
+    </section>
+
+    <section class="wrapper-1">
+        <div class="container-top">
+            <div class="icons">
+                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-o"></i>
+            </div>
+            <div>
+                <p>x</p>
+                <p>turn</p>
+            </div>
+            <button id="rvs-btn"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+
+        <div class="grid-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="container-bottom">
+            <div>
+                <p>x()</p>
+                <p>0</p>
+            </div>
+            <div>
+                <p>ties</p>
+                <p>0</p>
+            </div>
+            <div>
+                <p>o()</p>
+                <p>0</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="win-display">
+      <p>won!</p>
+      <p><span>x</span> takes the round</p>
+      <div class="btns2">
+         <button id="quitBtn">quit</button>
+         <button id="nxtBtn">next round</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
